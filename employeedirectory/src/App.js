@@ -7,7 +7,9 @@ import UserTable from './componenets/table'
 function App() {
   return (
     <div className="App">
-     
+      <Jumbotron>
+        <Form.Control type="search" placeholder="Search by Name" />
+      </Jumbotron>
       <UserTable />
     </div>
   );
