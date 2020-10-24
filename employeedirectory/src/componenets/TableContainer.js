@@ -52,7 +52,7 @@ export default class TableContainer extends Component {
                    </div>
                )
            }
-           else if(this.state.isFiltered === true) {
+           else if(this.state.isFiltered === true ) {
             return (
                 <div>
                     <Search  users={this.state.users} filterUsers={this.filterUsers} handleInputChange={this.handleInputChange} input={this.state.input}/>
