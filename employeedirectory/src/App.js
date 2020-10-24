@@ -1,13 +1,11 @@
-import React from 'react';
-import Search from './componenets/search'
-import UserTable from './componenets/table'
+import React, { Component } from 'react';
+import TableContainer from './componenets/TableContainer'
 
 
 function App() {
   return (
     <div className="App">
-     <Search />
-      <UserTable />
+      <TableContainer />
     </div>
   );
 }

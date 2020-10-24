@@ -1,23 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import SearchBar from "./jumbotron";
 
-export default class Search extends Component {
-
-    state = {
-       name: "" 
-    }
-
-    handleInputChange = event => {
-        const {value} = event.target;
-        this.setState({
-            name: value
-        })
-        console.log(this.state)
-    }
-
-    render(){
+export default  function Search ({handleInputChange, filterUsers, users, input}) {
         return(
-            <SearchBar handleInputChange={this.handleInputChange} name={this.state.name} />
+            <SearchBar  users={users} handleInputChange={handleInputChange} filterUsers={filterUsers} input={input} />
         )
-    }
 }
