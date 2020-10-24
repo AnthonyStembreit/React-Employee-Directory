@@ -48,7 +48,7 @@ export default class TableContainer extends Component {
                return (
                    <div>
                        <Search  users={this.state.users} filterUsers={this.filterUsers} handleInputChange={this.handleInputChange} input={this.state.input}/>
-                       <UserTable users={this.state.users}/>
+                       <UserTable usersDisplayed={this.state.users}/>
                    </div>
                )
            }
@@ -56,7 +56,7 @@ export default class TableContainer extends Component {
             return (
                 <div>
                     <Search  users={this.state.users} filterUsers={this.filterUsers} handleInputChange={this.handleInputChange} input={this.state.input}/>
-                    <UserTable users={this.state.filteredUsers}/>
+                    <UserTable usersDisplayed={this.state.filteredUsers}/>
                 </div>
             )
            }

@@ -4,7 +4,7 @@ import TableRow from "./tablerow"
 
 
 
-export default function UserTable({users}) {
+export default function UserTable({usersDisplayed}) {
     return (
             <div>
                 
@@ -18,7 +18,7 @@ export default function UserTable({users}) {
                         </tr>
                     </thead>
                     <tbody>
-                        {users.map(user => (
+                        {usersDisplayed.map(user => (
                             <TableRow thumbnail={user.picture.thumbnail} email={user.email} phone={user.phone} name={user.name.first + " " + user.name.last} />
                         ))}
                     </tbody>
