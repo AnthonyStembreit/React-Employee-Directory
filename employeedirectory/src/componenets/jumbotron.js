@@ -17,7 +17,7 @@ return (
         onChange={handleInputChange} />
     </Col>
     <Col>
-    <Button onClick={() => filterUsers(input, users)}>Name</Button>
+    <Button onClick={() => filterUsers(input, users)}>Search</Button>
     </Col>
     </Row>
 </Jumbotron>
