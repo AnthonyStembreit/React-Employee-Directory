@@ -4,7 +4,7 @@ import TableRow from "./tablerow"
 
 
 
-export default function UserTable({usersDisplayed}) {
+export default function UserTable({usersDisplayed, sortBy}) {
     return (
             <div>
                 
@@ -12,9 +12,9 @@ export default function UserTable({usersDisplayed}) {
                     <thead>
                         <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
+                            <th>Name      <button onClick={() => sortBy('fullName')}>Sort By</button></th>
+                            <th>Email     <button onClick={() => sortBy('email')}>Sort By</button></th>
+                            <th>Phone    <button onClick={() => sortBy('phone')}>Sort By</button></th>
                         </tr>
                     </thead>
                     <tbody>

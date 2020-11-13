@@ -5,19 +5,16 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 
-export default function SearchBar ({handleInputChange, filterUsers, users, input}){
+export default function SearchBar ({handleInputChange, input}){
 return (
 <Jumbotron>
     <Row>
     <Col>
     <Form.Control type="text"
-        placeholder="Search by Name"
+        placeholder="Search by First Name"
         value={input}
         name="input"
         onChange={handleInputChange} />
-    </Col>
-    <Col>
-    <Button onClick={() => filterUsers(input, users)}>Search</Button>
     </Col>
     </Row>
 </Jumbotron>
