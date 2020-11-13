@@ -29,5 +29,3 @@ Genereates a random list of employees, you cna then search those employees by fi
 * stembreit@gmail.com
 
 ![image](https://user-images.githubusercontent.com/64037800/99120334-52eacc00-25c0-11eb-9cb8-86bac83e026d.png)
-
-![image](https://user-images.githubusercontent.com/64037800/99120379-639b4200-25c0-11eb-9f64-ed4e3db11c11.png)
